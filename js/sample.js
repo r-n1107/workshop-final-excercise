@@ -59,7 +59,7 @@ function changeImage() {
 function stepMultipleRight() {
   const num = document.getElementById('right-steps').value;
   for (let i = 0; i < num; i++) {
-    if (x < 448) { 
+    if (x < 448) {
       stepRight();
     } else {
       alert('いきどまり');
@@ -67,11 +67,11 @@ function stepMultipleRight() {
     }
   }
 }
-          
+
 function stepMultipleDown() {
   const num = document.getElementById('down-steps').value;
   for (let i = 0; i < num; i++) {
-    if (y < 160) { 
+    if (y < 160) {
       stepDown();
     } else {
       alert('いきどまり');
@@ -79,7 +79,7 @@ function stepMultipleDown() {
     }
   }
 }
-          
+
 function reset() {
   x = 0;
   y = 0;

@@ -1,0 +1,48 @@
+.command-area {
+  display: flex;
+}
+
+input {
+  width: 50px;
+}
+
+#main-area {
+  /* box-sizing: border-box; */
+  margin: 10px 0;
+  position: relative;
+  width: 480px;
+  height: 192px;
+  border: 1px gray solid;
+}
+
+#cat {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 0;
+}
+
+.btns {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+button {
+  width: 60px;
+  height: 30px;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+}
+
+.up-down {
+  display: flex;
+}
+.reset {
+  width: inherit;
+}

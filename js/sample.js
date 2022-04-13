@@ -8,8 +8,6 @@ function stepDown() {
     stepNum++;
     document.getElementById("cat").style.top = y + 'px';
     changeImage();
-  } else {
-    alert('いきどまり');
   }
 }
 
@@ -19,8 +17,6 @@ function stepUp() {
     stepNum++;
     document.getElementById("cat").style.top = y + 'px';
     changeImage();
-  } else {
-    alert('いきどまり');
   }
 }
 
@@ -30,8 +26,6 @@ function stepLeft() {
     stepNum++;
     document.getElementById("cat").style.left = x + 'px';
     changeImage()
-  } else {
-    alert('いきどまり');
   }
 }
 
@@ -41,8 +35,6 @@ function stepRight() {
     stepNum++;
     document.getElementById("cat").style.left = x + 'px';
     changeImage();
-  } else {
-    alert('いきどまり');
   }
 }
 
@@ -62,7 +54,6 @@ function stepMultipleRight() {
     if (x < 448) {
       stepRight();
     } else {
-      alert('いきどまり');
       break;
     }
   }
@@ -74,17 +65,7 @@ function stepMultipleDown() {
     if (y < 160) {
       stepDown();
     } else {
-      alert('いきどまり');
       break;
     }
   }
-}
-
-function reset() {
-  x = 0;
-  y = 0;
-  stepNum = 0;
-  document.getElementById("cat").style.top = y + 'px';
-  document.getElementById("cat").style.left = x + 'px';
-  document.getElementById('cat').src = 'https://user-images.githubusercontent.com/39263724/157788409-f875512d-e5f8-42d9-8dd6-5cf670fc7def.gif';
 }

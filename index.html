@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/sample.css">
-    <script type="text/javascript" src="js/sample.js"></script>
-    <title>Final Excercise</title>
-</head>
-<body>
-  <div class="command-area">
+  <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="css/sample.css">
+      <script type="text/javascript" src="js/sample.js"></script>
+      <title>Final Excercise</title>
+  </head>
+  <body>
     <div>
-      <div>
-        右に<input id="right-steps" type="number" />歩進む
-        <button onclick="stepMultipleRight()">実行</button>
-      </div>
-      <div>
-        下に<input id="down-steps" type="number" />歩進む
-        <button onclick="stepMultipleDown()">実行</button>
-      </div>
+      右に<input id="right-steps" type="number" />歩進む
+      <button onclick="stepMultipleRight()">実行</button>
     </div>
-    <div class="btns">
-        <div class="up">
-          <button onclick="stepUp()">↑</button>
-        </div>
-        <div class="up-down">
-          <button onclick="stepLeft()">←</button>
-          <button onclick="stepDown()">↓</button>
-          <button onclick="stepRight()">→</button>
-        </div>
-      </div>
+    <div>
+      下に<input id="down-steps" type="number" />歩進む
+      <button onclick="stepMultipleDown()">実行</button>
     </div>
+    
+    <div>
+      <button onclick="stepUp()">↑</button>
+      <button onclick="stepLeft()">←</button>
+      <button onclick="stepDown()">↓</button>
+      <button onclick="stepRight()">→</button>
+    </div>
+    
     <div id="main-area">
-      <!-- https://hpgpixer.jp/image_icons/animals/icon_animal_cat_2.html -->
       <img id="cat" src="https://user-images.githubusercontent.com/39263724/157788409-f875512d-e5f8-42d9-8dd6-5cf670fc7def.gif">
     </div>
-  <div>
-    <button class="reset" onclick="reset()">リセット</button>
-  </div>
-</body>
+  </body>
 </html>

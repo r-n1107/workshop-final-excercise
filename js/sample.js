@@ -58,14 +58,3 @@ function stepMultipleRight() {
     }
   }
 }
-
-function stepMultipleDown() {
-  const num = document.getElementById('down-steps').value;
-  for (let i = 0; i < num; i++) {
-    if (y < 160) {
-      stepDown();
-    } else {
-      break;
-    }
-  }
-}
